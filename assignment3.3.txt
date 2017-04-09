@@ -1,0 +1,41 @@
+1.COMPONENTS OF HADOOP2.X:
+
+The components of hadoop2.x are
+
+HDFS:
+HDFS refers to Hadoop Distributed File System.
+It is the primary storage system used by Hadoop applications.
+HDFS is a distributed file system that provides high-performance access to data across Hadoop clusters. 
+HDFS has become a key tool for managing big data and supporting big data analytics applications.
+
+YARN or MapReduce:
+
+It is a new framework that facilitates writing arbitrary distributed processing frameworks and applications.
+YARN’s execution model is more generic than the earlier MapReduce implementation. 
+YARN can run applications that do not follow the MapReduce model unlike the original Apache Hadoop MapReduce.
+
+Resource Manager:
+
+Resource Manager is a per-cluster Level Component.
+It's scheduler is responsible to schedule required resources to applications.
+It does scheduling and monitoring or tracking of those applications.
+
+Application Master:
+
+Application Master is a per-application level component. 
+It is responsible for managing assigned Application Life cycle.
+It interacts with both Resource Manager’s Scheduler and Node Manager.
+It interacts with Scheduler to acquire required resources.
+It interacts with Node Manager to execute assigned tasks and monitor those task’s status.
+
+Node Manager:
+
+Node Manager is a Per-Node Level component.
+It is responsible for managing the life-cycle of the Container.
+It also monitors each container’s resource utilization.
+
+Container:
+
+Each Master Node or Slave Node contains set of Containers. 
+Container is a portion of memory in HDFS.
+It is similar to Data Slots. 
